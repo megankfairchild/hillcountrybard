@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Upcoming Events - Hill Country Bard</title>
+
+<link rel="stylesheet" href="main.css">
+
+<style>
+/* Event layout styling */
+.event-card {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.date-box {
+    min-width: 120px;
+    background: #304529;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 15px;
+    font-family: var(--header-font);
+}
+
+.date-box .emoji {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.date-box .month {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.date-box .day {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.date-box .year {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+.event-details {
+    flex: 1;
+}
+
+.section-title {
+    margin-top: 40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="layout">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <img src="images/logo.png" alt="Hill Country Bard Logo">
+
+        <h2>Quick Links</h2>
+        <a href="index.html">Home</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="upcomingevents.html">Upcoming Events</a>
+        <a href="contactme.html">Contact Me</a>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+
+        <h1>Upcoming Events</h1>
+
+        <!-- UPCOMING EVENTS -->
+        <div class="box">
+
+            <div class="event-card">
+                <div class="date-box">
+                    <span class="emoji">🎵</span>
+                    <div class="month">MAY</div>
+                    <div class="day">18</div>
+                    <div class="year">2026</div>
+                </div>
+
+                <div class="event-details">
+                    <h3>Sunset Acoustic at Driftwood Winery</h3>
+                    <p>
+                        An intimate evening set overlooking the Texas Hill Country.
+                        Expect acoustic storytelling, looping guitar textures, and original songs.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="event-card">
+                <div class="date-box">
+                    <span class="emoji">🎸</span>
+                    <div class="month">JUN</div>
+                    <div class="day">02</div>
+                    <div class="year">2026</div>
+                </div>
+
+                <div class="event-details">
+                    <h3>Private Event - Dripping Springs</h3>
+                    <p>
+                        A private one-man-band performance for a local celebration.
+                        Custom setlist including folk, blues, and instrumental pieces.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="event-card">
+                <div class="date-box">
+                    <span class="emoji">🌙</span>
+                    <div class="month">JUN</div>
+                    <div class="day">21</div>
+                    <div class="year">2026</div>
+                </div>
+
+                <div class="event-details">
+                    <h3>Summer Solstice Porch Session</h3>
+                    <p>
+                        Outdoor acoustic set under the stars featuring looping guitar,
+                        mandolin textures, and improvisation.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- PAST EVENTS -->
+        <h2 class="section-title">Past Events</h2>
+
+        <div class="box">
+
+            <div class="event-card">
+                <div class="date-box">
+                    <span class="emoji">🎤</span>
+                    <div class="month">APR</div>
+                    <div class="day">12</div>
+                    <div class="year">2026</div>
+                </div>
+
+                <div class="event-details">
+                    <h3>Bluebonnet Festival Set</h3>
+                    <p>
+                        Outdoor performance featuring original acoustic compositions
+                        and traditional folk covers.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="box">
+
+            <div class="event-card">
+                <div class="date-box">
+                    <span class="emoji">🎶</span>
+                    <div class="month">MAR</div>
+                    <div class="day">08</div>
+                    <div class="year">2026</div>
+                </div>
+
+                <div class="event-details">
+                    <h3>Hill Country Coffeehouse Night</h3>
+                    <p>
+                        Acoustic set in an intimate coffeehouse setting with
+                        looping guitar and vocal harmonies.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
