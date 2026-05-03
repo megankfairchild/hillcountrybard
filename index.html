@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hill Country Bard</title>
+
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="main.css">
+
+    <style>
+        /* Page-specific layout */
+
+        .layout {
+            display: flex;
+        }
+
+        /* LEFT SIDEBAR */
+        .sidebar {
+            width: 250px;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: var(--primary-color);
+            color: var(--light-text);
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .sidebar img {
+            width: 100%;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h2 {
+            color: var(--light-text);
+            margin-top: 20px;
+        }
+
+        .sidebar a {
+            display: block;
+            color: var(--light-text);
+            text-decoration: none;
+            margin: 10px 0;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        /* RIGHT CONTENT */
+        .content {
+            margin-left: 270px;
+            padding: 30px;
+        }
+
+        .profile-img {
+            max-width: 200px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <img src="images/logo.png" alt="Hill Country Bard Logo">
+
+            <h2>Quick Links</h2>
+            <a href="gallery.html">Gallery</a>
+            <a href="upcomingevents.html">Upcoming Events</a>
+            <a href="contactme.html">Contact Me</a>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="content container">
+
+            <h1>Hill Country Bard</h1>
+
+            <div class="box">
+                <img src="images/profile.png" alt="Profile Photo" class="profile-img">
+                <h2>About Me</h2>
+                <p>
+                    I live in Dripping Springs, TX and have been playing guitar for over 20 years.
+                    As a one-man band acoustic performer, I bring a full, rich sound to every show.
+                </p>
+            </div>
+
+            <div class="box box-accent">
+                <h3>Teaching Experience</h3>
+                <p>
+                    I’ve spent years teaching guitar to students of all ages and skill levels,
+                    helping them build confidence and develop their own musical style.
+                </p>
+            </div>
+
+            <div class="box">
+                <h3>Drumming Background</h3>
+                <p>
+                    In addition to guitar, I have extensive experience as a drummer, which
+                    deeply influences my rhythm and live performance style.
+                </p>
+            </div>
+
+            <div class="box box-accent">
+                <h3>Other Instruments</h3>
+                <p>
+                    When I’m not playing guitar, I enjoy exploring other instruments including:
+                </p>
+                <ul>
+                    <li>Violin</li>
+                    <li>Piano</li>
+                    <li>Mandolin</li>
+                    <li>Hand Drums</li>
+                </ul>
+            </div>
+
+            <div class="box">
+                <h3>More Photos</h3>
+                <p>
+                    Check out more moments from performances and behind the scenes in the gallery.
+                </p>
+                <a href="gallery.html" class="button">View Gallery</a>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
