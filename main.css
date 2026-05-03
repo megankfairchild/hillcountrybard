@@ -132,7 +132,27 @@ p {
 .box-accent {
     border-left: 6px solid var(--accent-color);
 }
+.about-me {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
 
+/* Text side */
+.about-text {
+    flex: 1;
+}
+
+/* Image side */
+.about-me .profile-img {
+    max-width: 220px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+}
 /* =========================
    PROFILE IMAGE
    ========================= */
@@ -187,5 +207,13 @@ p {
 
     .tile-grid {
         grid-template-columns: 1fr;
+    }
+       .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me .profile-img {
+        max-width: 200px;
     }
 }
