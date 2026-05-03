@@ -1,5 +1,10 @@
 /* =========================
-   COLOR VARIABLES
+   GOOGLE FONTS (Renaissance Style)
+   ========================= */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:wght@400;500&display=swap');
+
+/* =========================
+   COLOR & FONT VARIABLES
    ========================= */
 :root {
     --bg-color: #E2D6AB;
@@ -11,6 +16,9 @@
 
     --box-bg: #f5f1dc;
     --border-color: #304529;
+
+    --header-font: 'Cinzel', serif;
+    --body-font: 'EB Garamond', serif;
 }
 
 /* =========================
@@ -19,7 +27,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-family: var(--body-font);
     background-color: var(--bg-color);
     color: var(--text-color);
 }
@@ -28,8 +36,15 @@ body {
    TYPOGRAPHY
    ========================= */
 h1, h2, h3 {
+    font-family: var(--header-font);
     color: var(--primary-color);
     margin-bottom: 0.5em;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
 }
 
 p {
@@ -37,44 +52,63 @@ p {
 }
 
 /* =========================
-   CONTAINER / LAYOUT
+   LAYOUT STRUCTURE
    ========================= */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: 0 auto;
+.layout {
+    display: flex;
 }
 
 /* =========================
-   HEADER / NAV
+   SIDEBAR (FIXED LEFT COLUMN)
    ========================= */
-.header {
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: var(--primary-color);
     color: var(--light-text);
     padding: 20px;
-    text-align: center;
+    box-sizing: border-box;
 }
 
-.nav {
-    background-color: var(--accent-color);
-    padding: 10px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+.sidebar img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-.nav a {
+.sidebar h2 {
+    font-family: var(--header-font);
+    color: var(--light-text);
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+
+.sidebar a {
+    display: block;
     color: var(--light-text);
     text-decoration: none;
+    margin: 10px 0;
     font-weight: bold;
 }
 
-.nav a:hover {
+.sidebar a:hover {
     text-decoration: underline;
 }
 
 /* =========================
-   CONTENT BOXES (DIVS)
+   MAIN CONTENT (RIGHT SIDE)
+   ========================= */
+.content {
+    margin-left: 270px;
+    padding: 30px;
+    max-width: 1100px;
+}
+
+/* =========================
+   CONTENT BOXES
    ========================= */
 .box {
     background-color: var(--box-bg);
@@ -85,9 +119,17 @@ p {
     box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Highlighted box (accent usage) */
 .box-accent {
     border-left: 6px solid var(--accent-color);
+}
+
+/* =========================
+   IMAGES
+   ========================= */
+.profile-img {
+    max-width: 200px;
+    border-radius: 10px;
+    margin-bottom: 20px;
 }
 
 /* =========================
@@ -105,17 +147,6 @@ p {
 
 .button:hover {
     background-color: var(--accent-color);
-}
-
-/* =========================
-   FOOTER
-   ========================= */
-.footer {
-    background-color: var(--primary-color);
-    color: var(--light-text);
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
 }
 
 /* =========================
@@ -139,12 +170,17 @@ p {
    RESPONSIVE DESIGN
    ========================= */
 @media (max-width: 768px) {
-    .flex {
-        flex-direction: column;
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
     }
 
-    .nav {
+    .content {
+        margin-left: 0;
+    }
+
+    .flex {
         flex-direction: column;
-        align-items: center;
     }
 }
