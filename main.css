@@ -219,4 +219,70 @@ p {
     .about-me .profile-img {
         max-width: 200px;
     }
+
+
+/* =========================
+   MOBILE OPTIMIZATION
+   ========================= */
+
+
+    /* Stack sidebar on top */
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+
+    .sidebar img {
+        max-width: 140px;
+    }
+
+    /* Content takes full width */
+    .content {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    /* Make title fit better */
+    h1 {
+        font-size: 2.2rem;
+        text-align: center;
+    }
+
+    /* About section stacks vertically */
+    .about-me {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-me .profile-img {
+        max-width: 180px;
+    }
+
+    /* Tile grid becomes single column */
+    .tile-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Event cards stack nicely */
+    .event-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .date-box {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    /* Reduce padding slightly for smaller screens */
+    .box {
+        padding: 15px;
+    }
+   img {
+    max-width: 100%;
+    height: auto;
+}
 }
